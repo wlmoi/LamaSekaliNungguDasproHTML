@@ -15,6 +15,11 @@ document.getElementById("predictBtn").addEventListener("click", function() {
     var randomIndex = Math.floor(Math.random() * predictions.length);
     var predictionElement = document.getElementById("prediction");
     
+    // Play sound
+    var bellSound = document.getElementById("bellSound");
+    bellSound.play();
+
+    // Show prediction with animation
     predictionElement.classList.remove("show");
     predictionElement.classList.add("hide");
     
